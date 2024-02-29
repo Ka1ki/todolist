@@ -1,4 +1,8 @@
-const todoItems = JSON.parse(localStorage.getItem("todoListItems"));
+let todoItems = [];
+
+if (localStorage.getItem("todoListItems")) {
+  todoItems = JSON.parse(localStorage.getItem("todoListItems"));
+}
 
 const todoList = document.getElementById("todoList");
 
